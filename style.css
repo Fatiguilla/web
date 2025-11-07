@@ -1,0 +1,401 @@
+/* Fuentes estilizadas */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff8e1;
+  color: #333;
+}
+
+/* --- HEADER / NAV --- */
+header {
+  background: linear-gradient(90deg, #e63946, #f77f00, #ffcc00);
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+/* --- PORTADA --- */
+.portada {
+  height: 100vh;
+  background: linear-gradient(rgba(255,0,0,0.5), rgba(255,165,0,0.5)), url('fondo-principal.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.portada h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+  margin: 0;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  animation: fadeInDown 2s ease;
+}
+.portada p {
+  font-size: 1.8em;
+  margin: 20px 0 40px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  animation: fadeInUp 2s ease;
+}
+.btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #e65100;
+  transform: scale(1.1);
+}
+
+/* --- QUIÉNES SOMOS --- */
+.quienes {
+  position: relative;
+  height: 100vh;
+  background: url('quienes-fondo.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background: rgba(0,0,0,0.5); /* oscurece la imagen */
+  width: 70%;
+  padding: 50px;
+  border-radius: 15px;
+}
+.texto-quienes h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ffcc00;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.texto-quienes p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #fff;
+  text-align: left; /* no margen a margen */
+  margin-bottom: 20px;
+}
+
+/* --- ANIMACIONES --- */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+  .portada h1 { font-size: 3em; }
+  .portada p { font-size: 1.2em; }
+  .overlay { width: 90%; padding: 30px; }
+  .texto-quienes h2 { font-size: 2em; }
+  .texto-quienes p { font-size: 1em; }
+}
+
+/* --- REDES SOCIALES --- */
+.redes {
+  background: linear-gradient(180deg, #ffcc00, #f77f00, #e63946);
+  color: white;
+  text-align: center;
+  padding: 100px 30px;
+  min-height: 100vh;
+}
+
+.redes h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.redes p {
+  font-size: 1.3em;
+  margin-bottom: 50px;
+}
+
+.botones-redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.btn-red {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  padding: 18px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: 0.4s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Colores de cada red */
+.facebook { background-color: #1877f2; }
+.whatsapp { background-color: #25d366; }
+.instagram { 
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); 
+}
+
+/* Efecto hover */
+.btn-red:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* --- ESTILO GENERAL --- */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* --- MENÚ --- */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff6f00, #e63946);
+  padding: 20px 60px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #ffcc00;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}
+
+/* --- PRODUCTOS --- */
+.productos {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.productos h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #e63946;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Cada producto en fila */
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Para alternar lados */
+.producto.invertido {
+  flex-direction: row-reverse;
+}
+
+/* Texto */
+.producto .texto {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  line-height: 1.6;
+  background: rgba(255, 221, 153, 0.3);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.producto .texto h3 {
+  color: #ff6f00;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.producto .texto p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Imagen */
+.producto img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease;
+}
+
+.producto img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .producto {
+    flex-direction: column;
+    text-align: center;
+  }
+  .producto.invertido {
+    flex-direction: column;
+  }
+  .producto img {
+    width: 90%;
+  }
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #d22b2b;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Sección bienvenida */
+.bienvenida {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.bienvenida h1 {
+  font-size: 2.8em;
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+.bienvenida .intro {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(80%);
+}
+
+.texto-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.texto-banner h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.texto-banner p {
+  font-size: 1.2em;
+}
+
+/* Contenido adicional */
+.contenido p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
